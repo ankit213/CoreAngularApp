@@ -1,0 +1,11 @@
+C:\Users\ankit\Documents\Visual Studio 2017\Projects\CoreAngularApp\Utility\bin\Debug\netcoreapp2.1\Utility.deps.json
+C:\Users\ankit\Documents\Visual Studio 2017\Projects\CoreAngularApp\Utility\bin\Debug\netcoreapp2.1\Utility.runtimeconfig.json
+C:\Users\ankit\Documents\Visual Studio 2017\Projects\CoreAngularApp\Utility\bin\Debug\netcoreapp2.1\Utility.runtimeconfig.dev.json
+C:\Users\ankit\Documents\Visual Studio 2017\Projects\CoreAngularApp\Utility\bin\Debug\netcoreapp2.1\Utility.dll
+C:\Users\ankit\Documents\Visual Studio 2017\Projects\CoreAngularApp\Utility\bin\Debug\netcoreapp2.1\Utility.pdb
+C:\Users\ankit\Documents\Visual Studio 2017\Projects\CoreAngularApp\Utility\obj\Debug\netcoreapp2.1\Utility.csproj.CoreCompileInputs.cache
+C:\Users\ankit\Documents\Visual Studio 2017\Projects\CoreAngularApp\Utility\obj\Debug\netcoreapp2.1\Utility.AssemblyInfoInputs.cache
+C:\Users\ankit\Documents\Visual Studio 2017\Projects\CoreAngularApp\Utility\obj\Debug\netcoreapp2.1\Utility.AssemblyInfo.cs
+C:\Users\ankit\Documents\Visual Studio 2017\Projects\CoreAngularApp\Utility\obj\Debug\netcoreapp2.1\Utility.dll
+C:\Users\ankit\Documents\Visual Studio 2017\Projects\CoreAngularApp\Utility\obj\Debug\netcoreapp2.1\Utility.pdb
+C:\Users\ankit\Documents\Visual Studio 2017\Projects\CoreAngularApp\Utility\obj\Debug\netcoreapp2.1\Utility.csprojResolveAssemblyReference.cache

@@ -1,0 +1,18 @@
+// Here you can add other styles
+.error-msg {
+  color: rgb(221,44,0);
+  font-size: 13px;
+  line-height: 14px;
+  overflow: hidden;
+  -webkit-transition: all .3s cubic-bezier(.55,0,.55,.2);
+  transition: all .3s cubic-bezier(.55,0,.55,.2);
+  opacity: 1;
+  margin-top: 0;
+  margin-bottom: 2px;
+  float:left;
+  margin-left:9%;
+}
+
+.extra-group {
+  width: 100%
+}

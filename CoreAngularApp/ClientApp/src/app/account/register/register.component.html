@@ -1,0 +1,77 @@
+<div class="app-body">
+  <main class="main d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto" style="margin-top:10%;">
+          <div class="card mx-4">
+            <div class="card-body p-4">
+              <form #userForm="ngForm">
+                <h1>Register</h1>
+                <p class="text-muted">Create your account</p>
+                <div class="mb-3">
+                  <div class="input-group extra-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="icon-user"></i></span>
+                    </div>
+                    <input type="text" name="firstname" class="form-control" placeholder="First name" [(ngModel)]="userModel.FirstName" maxlength="255" required #firstname="ngModel">
+                  </div>
+                  <div [hidden]="!(firstname.touched && !firstname.valid && firstname.errors.required)" class="error-msg">First name is required</div>
+                </div>
+                <div class="mb-3">
+                  <div class="input-group extra-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="icon-user"></i></span>
+                    </div>
+                    <input type="text" name="lastname" class="form-control" placeholder="Last name" [(ngModel)]="userModel.LastName" maxlength="255" required #lastname="ngModel">
+                  </div>
+                  <div [hidden]="!(lastname.touched && !lastname.valid && lastname.errors.required)" class="error-msg">Last name is required</div>
+                </div>
+                <div class="mb-3">
+                  <div class="input-group extra-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="icon-user"></i></span>
+                    </div>
+                    <input type="text" name="username" class="form-control" placeholder="User name" [(ngModel)]="userModel.UserName" required #username="ngModel">
+                  </div>
+                  <div [hidden]="!(username.touched && !username.valid && username.errors.required)" class="error-msg">User name is required</div>
+                  <!--<div [hidden]="!isUserNameExist" class="error"> User Name already exists!</div>-->
+                </div>
+                <div class="mb-3">
+                  <div class="input-group extra-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">@</span>
+                    </div>
+                    <input type="text" name="email" class="form-control" placeholder="Email" [(ngModel)]="userModel.Email" required #email="ngModel" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" maxlength="255">
+                  </div>
+                  <div [hidden]="!(email.touched && !email.valid && email.errors.required)" class="error-msg">Email is required</div>
+                  <div [hidden]="!(email.touched && !email.valid && email.errors.pattern)" class="error-msg">Email is invalid</div>
+                  <!--<div [hidden]="!isEmailExist" class="error"> Email already exists</div>-->
+                </div>
+                <div class="mb-3">
+                  <div class="input-group extra-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="icon-lock"></i></span>
+                    </div>
+                    <input type="password" name="password" class="form-control" placeholder="Password" [(ngModel)]="userModel.Password" required #password="ngModel">
+                  </div>
+                  <div [hidden]="!(password.touched && !password.valid && password.errors.required)" class="error-msg">Password is required</div>
+                </div>
+                <button type="button" class="btn btn-block btn-success" (click)="addUser()" [disabled]="!userForm.form.valid">Create Account</button>
+              </form>
+            </div>
+            <div class="card-footer p-4">
+              <div class="row">
+                <div class="col-6">
+                  <!-- <button class="btn btn-block btn-facebook" type="button"><span>facebook</span></button> -->
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-block btn-twitter" type="button" routerLink="../login"><span>Log In</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
